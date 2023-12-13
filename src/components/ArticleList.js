@@ -5,7 +5,7 @@ function ArticleList({posts}) {
   console.log({posts})
 
   let articlesMultiLine = posts.map((post, i) => {
-    return <Article title={post.title} date={post.date} preview={post.title} id={post.id} key={post.id} />
+    return <Article title={post.title} date={post.date} preview={post.preview} id={post.id} minutes={post.minutes} key={post.id} />
     // return <Article key={post.id} post={post} />
   })
 
